@@ -1,0 +1,15 @@
+{
+  "input" : [  
+    { "item" : "tungstenbar", "count" : 2 },
+    { "item" : "glass", "count" : 1 },
+    { "item" : "staticcell", "count" : 1 },
+    { "item" : "refinedaegisalt", "count" : 10 },
+    { "item" : "smallbattery", "count" : 2 }
+  ],
+  "output" : {
+    "item" : "portalgun",
+    "count" : 1
+  },
+  "duration" : 1,
+  "groups" : [ "inventorstable3", "craftingstations", "all" ]
+}
