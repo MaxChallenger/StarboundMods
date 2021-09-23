@@ -1,0 +1,12 @@
+{
+  "author" : "Maxwell",
+  "description" : "One way teleport",
+  "friendlyName" : "teleportal",
+  "includes" : [],
+  "name" : "Teleportal",
+  "priority" : -1,
+  "requires" : [],
+  "version" : "1",
+  "link" : "",
+  "steamContentId" : ""
+}
