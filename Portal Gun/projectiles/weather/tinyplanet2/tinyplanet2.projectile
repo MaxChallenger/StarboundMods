@@ -1,0 +1,24 @@
+{
+  "projectileName" : "tinyplanet2",
+  "physics" : "hover",
+  "bounces" : 0,
+  "timeToLive" : 1.2,
+  "image" : "tinyplanet2.png",
+  "animationCycle" : 1.2,
+  "lightColor" : [253, 160, 57],
+  "frameNumber" : 7,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/weather/tinyexplosion.config"
+    }
+  ],
+  "power" : 1,
+  "speed" : 0,
+  "onlyHitTerrain" : true,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "damagePoly" : [ [-50, -50], [50, -50], [50, 50], [-50, 50] ],
+  "orientationLocked" : true,
+  "emitters" : [ "sparks" ]
+}
