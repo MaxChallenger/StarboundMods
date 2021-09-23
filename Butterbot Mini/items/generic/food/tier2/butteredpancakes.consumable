@@ -1,0 +1,24 @@
+{
+  "itemName" : "butteredpancakes",
+  "rarity" : "legendary",
+  "price" : 500,
+  "category" : "food",
+  "inventoryIcon" : "butteredpancakes.png",
+  "description" : "A superior pancake recipe.",
+  "shortdescription" : "Buttered Pancakes",
+  "foodValue" : 50,
+  "effects" : [ [
+    {
+      "effect" : "maxhealthscalingboostfood",
+      "duration" : 60
+    }
+  ] ],
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 10,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 5,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}
