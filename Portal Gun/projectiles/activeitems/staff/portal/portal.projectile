@@ -1,0 +1,70 @@
+{
+  "projectileName" : "portal",
+  "physics" : "default",
+  "timeToLive" : 5,
+  "image" : "portal.png",
+  "animationCycle" : 1.0,
+  "frameNumber" : 8,
+  "windupFrames" : 3,
+  "winddownFrames" : 3,
+  "periodicActions" : [
+    {
+      "time" : 14.8,
+      "repeat" : false,
+      "action" : "sound",
+      "options" : [ "/sfx/tech/vehicle_disappear2.ogg" ]
+    }
+  ],
+  "actionOnReap" : [],
+  "speed" : 0,
+  "power" : 0,
+
+  "onlyHitTerrain" : true,
+
+  "physicsCollisions" : {
+    "piece1" : {
+      "collision" : [ [-1.5, 0], [0, 3.0] ],
+      "collisionKind" : "slippery",
+      "categoryWhitelist" : ["monster", "npc", "vehicle", "itemdrop", "projectile"]
+    },
+    "piece2" : {
+      "collision" : [ [0, 3.0], [1.5, 0] ],
+      "collisionKind" : "slippery",
+      "categoryWhitelist" : ["monster", "npc", "vehicle", "itemdrop", "projectile"]
+    },
+    "piece3" : {
+      "collision" : [ [1.5, 0], [0, -3.0] ],
+      "collisionKind" : "slippery",
+      "categoryWhitelist" : ["monster", "npc", "vehicle", "itemdrop", "projectile"]
+    },
+    "piece4" : {
+      "collision" : [ [0, -3.0], [-1.5, 0] ],
+      "collisionKind" : "slippery",
+      "categoryWhitelist" : ["monster", "npc", "vehicle", "itemdrop", "projectile"]
+    },
+    "piece5" : {
+      "collision" : [ [-1, 2], [1, 2] ],
+      "collisionKind" : "slippery",
+      "categoryWhitelist" : ["player", "vehicle", "itemdrop", "projectile"]
+    }
+  },
+
+  "actionOnHit" : [
+    {
+      "action" : "/items/active/weapons/staff/ability/portal/portal.lua"
+    }
+  ],
+
+  "renderLayer" : "ItemDrop+1",
+  "orientationLocked" : true,
+  "fullbright" : true,
+  "emitters" : [ ],
+  "lightColor" : [133, 213, 75],
+
+  "piercing" : true,
+  "bounces" : -1,
+
+  "scripts" : [ "/projectiles/activeitems/staff/staffprojectile.lua" ],
+
+  "persistentAudio" : "/sfx/projectiles/forcecage_loop.ogg"
+}
