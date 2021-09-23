@@ -1,0 +1,9 @@
+{
+  "name" : "body",
+  "category" : "butterbot",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "butterbot.png"
+  }
+}
