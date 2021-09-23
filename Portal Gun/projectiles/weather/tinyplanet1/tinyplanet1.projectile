@@ -1,0 +1,55 @@
+{
+  "projectileName" : "tinyplanet1",
+  "physics" : "hover",
+  "bounces" : 1,
+  "timeToLive" : 1.3,
+  "image" : "tinyplanet1.png",
+  "animationCycle" : 1.3,
+  "lightColor" : [253, 160, 57],
+  "frameNumber" : 8,
+  "actionOnReap" : [
+    {
+      "action" : "projectile",
+      "type" : "tinymeteor",
+      "angleAdjust" : 60
+    },
+    {
+      "action" : "projectile",
+      "type" : "tinymeteor",
+      "angleAdjust" : 150
+    },
+    {
+      "action" : "projectile",
+      "type" : "tinymeteor",
+      "angleAdjust" : 180
+    },
+    {
+      "action" : "projectile",
+      "type" : "tinymeteor",
+      "angleAdjust" : 240
+    },
+    {
+      "action" : "projectile",
+      "type" : "tinymeteor",
+      "angleAdjust" : 270
+    },
+    {
+      "action" : "projectile",
+      "type" : "tinymeteor",
+      "angleAdjust" : 300
+    },
+    {
+      "action" : "projectile",
+      "type" : "tinyplanet2",
+      "angleAdjust" : 0
+    }
+  ],
+  "power" : 1,
+  "speed" : 0,
+  "onlyHitTerrain" : true,
+  "damageType" : "NoDamage",
+  "damageKind" : "default",
+  "damagePoly" : [ [-75, -75], [75, -75], [75, 75], [-75, 75] ],
+  "orientationLocked" : true,
+  "emitters" : [ "sparks" ]
+}
