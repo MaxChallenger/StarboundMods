@@ -1,0 +1,66 @@
+{
+  "objectName" : "teleportal",
+  "colonyTags" : ["science"],
+  "objectType" : "teleporter",
+  "printable" : false,
+  "rarity" : "Legendary",
+  "description" : "I think Rick left this here...",
+  "price" : 0,
+  "shortdescription" : "Portal",
+  "race" : "generic",
+  "category" : "teleporter",
+
+  "apexDescription" : "A direct link with the Outpost. Neat!",
+  "avianDescription" : "A teleporter to take me back to the Outpost.",
+  "floranDescription" : "Thiss teleporter will take Floran to Outpost.",
+  "glitchDescription" : "Reassured. This will teleport me safely to the Outpost.",
+  "humanDescription" : "A handy link to the Outpost.",
+  "hylotlDescription" : "A direct link to the Outpost, a useful device indeed.",
+  "novakidDescription" : "If I step in here I'll end up at the Outpost.",
+
+  "inventoryIcon" : "/objects/teleporter/teleportal/teleportalicon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "teleportal.png:0" }, { "image" : "teleportal.png:<frame>", "fullbright" : true } ],
+
+      "imagePosition" : [-22, 2],
+      "frames" : 8,
+      "animationCycle" : 0.8,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "solid",
+      "collisionSpaces" : []
+    }
+  ],
+
+  "health" : 5,
+  "rooting" : true,
+
+  "breakDropPool" : "teleportal",
+
+  "teleporterFootPosition" : [0, 1],
+
+  "scripts" : [ "/scripts/npcToyObject.lua"],
+  "npcToy" : {
+    "influence" : [
+      "teleporter",
+      "teleporterComplete"
+    ],
+    "defaultReactions" : {
+      "teleporter" : [
+        [1.0, "beamaway"]
+      ],
+      "teleporterComplete" : [
+        [1.0, "vomit"],
+        [1.0, "smile"]
+      ]
+    },
+    "preciseStandPositionLeft" : [0, 0.0],
+    "preciseStandPositionRight" : [0, 0.0],
+    "maxNpcs" : 1
+  },
+
+  "interactAction" : "OpenTeleportDialog",
+  "interactData" : "/interface/warping/teleportal.config"
+}
