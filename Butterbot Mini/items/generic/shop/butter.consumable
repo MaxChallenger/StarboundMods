@@ -1,0 +1,28 @@
+{
+  "itemName" : "butter",
+  "rarity" : "rare",
+  "price" : 100,
+  "category" : "food",
+  "inventoryIcon" : "butter.png",
+  "description" : "Add to improve any meal.",
+  "shortdescription" : "Butter",
+  "foodValue" : 25,
+  "effects" : [ [
+    {
+      "effect" : "maxenergyscalingboostfood",
+      "duration" : 300
+    },
+    {
+        "effect" : "runboostfood",
+        "duration" : 180
+    }
+  ] ],
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 10,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 10,
+  "blockingEffects" : [
+    "wellfed"
+  ]
+}
