@@ -1,4 +1,4 @@
-# StarboundMods
+# Starbound Mods
 Rick and Morty themed mods for Starbound
 
 # Import Mods
