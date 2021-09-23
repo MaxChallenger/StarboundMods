@@ -1,0 +1,15 @@
+[
+{
+  "op":"add",
+  "path":"/butteredpancakes",
+  "value": [
+    [1, {
+      "butteredpancakes" : {
+      "order" : 151,
+      "item" : "butteredpancakes"
+    }
+    }
+    ]
+  ]
+}
+]
