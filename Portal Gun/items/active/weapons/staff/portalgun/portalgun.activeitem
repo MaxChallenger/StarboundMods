@@ -1,0 +1,109 @@
+{
+  "itemName" : "portalgun",
+  "level" : 6,
+  "price" : 404,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "I like pwortals.",
+  "shortdescription" : "Portal Gun",
+  "category" : "staff",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","staff"],
+  "tooltipKind" : "staff",
+
+  "learnBlueprintsOnPickup" : [
+    "teleportal"
+  ],
+
+  "animation" : "/items/active/weapons/staff/portalgun.animation",
+  "animationParts" : {
+    "staff" : "portalgun.png",
+    "stone" : "",
+    "chargeEffect" : "portalguncharge.png"
+  },
+  "animationCustom" : {},
+
+  "inventoryIcon" : "portalgunicon.png",
+
+  "scripts" : ["/items/active/weapons/staff/staff.lua"],
+
+  "stances" : {
+    "idle" : {
+      "armRotation" : -10,
+      "weaponRotation" : 5,
+      "twoHanded" : false,
+
+      "allowRotate" : true,
+      "allowFlip" : true
+    },
+    "charge" : {
+      "duration" : 0.001,
+      "armRotation" : -10,
+      "weaponRotation" : 5,
+      "twoHanded" : false,
+
+      "allowRotate" : true,
+      "allowFlip" : true
+    },
+    "charged" : {
+      "armRotation" : -10,
+      "weaponRotation" : 5,
+      "twoHanded" : false,
+
+      "allowRotate" : true,
+      "allowFlip" : true
+    },
+    "discharge" : {
+      "duration" : 0.7,
+      "armRotation" : -8,
+      "weaponRotation" : 5,
+      "twoHanded" : false,
+
+      "allowRotate" : false,
+      "allowFlip" : false
+    },
+    "cooldown" : {
+      "duration" : 2.2,
+      "armRotation" : -10,
+      "weaponRotation" : 5,
+      "twoHanded" : false,
+
+      "allowRotate" : false,
+      "allowFlip" : false
+    }
+  },
+
+  "elementalType" : "electric",
+  "elementalName" : " ",
+
+  "primaryAbility" : {
+    "type" : "portal",
+    "name" : "Portal",
+    "scripts" : ["/items/active/weapons/staff/abilities/portal/portal.lua"],
+    "class" : "Portal",
+
+    "energyCost" : 80,
+
+    "maxCastRange" : 7,
+
+    "projectileType" : "portal",
+    "projectileParameters" : {}
+  },
+
+  "altAbility" : {
+    "type" : "portalattack",
+    "name" : "Tier 6 Destination",
+    "scripts" : ["/items/active/weapons/staff/abilities/portalattack/portalattack.lua"],
+    "class" : "Portal",
+
+    "energyCost" : 80,
+
+    "maxCastRange" : 100,
+
+    "projectileCount" : 1,
+    "projectileType" : "tinyplanet1",
+    "projectileParameters" : {}
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}
