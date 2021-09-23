@@ -1,0 +1,12 @@
+{
+  "author" : "Afrotastic22",
+  "description" : "Rick's Portal Gun",
+  "friendlyName" : "portalgun",
+  "includes" : [],
+  "name" : "Portal Gun",
+  "priority" : -1,
+  "requires" : [],
+  "version" : "1",
+  "link" : "",
+  "steamContentId" : ""
+}
