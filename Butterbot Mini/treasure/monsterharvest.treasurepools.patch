@@ -1,0 +1,14 @@
+[
+{
+  "op":"add",
+  "path":"/butterbotminiHarvest",
+  "value": [
+    [1, {
+      "pool" : [
+        {"weight" : 1.0, "item" : "butter"}
+      ]
+    }
+    ]
+  ]
+}
+]
